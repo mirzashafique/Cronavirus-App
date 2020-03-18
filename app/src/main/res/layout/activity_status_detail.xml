@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.StatusDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="6dp"
+        app:cardElevation="6dp"
+        android:layout_height="56dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cross_im"
+                android:layout_width="32dp"
+                android:padding="4dp"
+                android:layout_height="32dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_close"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/statics"
+                android:maxWidth="20dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/locationid"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/location_id"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/continent_name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/continent_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/country_name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/country_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/province_name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/province_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/current_confirmed_count"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/current_confirmed_count_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/confirmed_count"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/confirmed_count_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/suspected_count"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/suspected_count_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/cured_count"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cured_count_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/dead_count"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dead_count_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/update_time"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/update_time_tv"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="end"
+            android:textColor="@color/backgroundColor400"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgroundColor400" />
+
+
+</LinearLayout>

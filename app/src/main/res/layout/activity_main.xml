@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="6dp"
+        app:cardElevation="6dp"
+        android:layout_height="56dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_red_icon"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/coronavirus"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/main_page_txt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/status_cv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:elevation="7dp"
+            app:cardElevation="7dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="105dp"
+                    android:src="@drawable/ic_static"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/statics"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/backgroundColor500"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/checker_cv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:elevation="7dp"
+            app:cardElevation="7dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_checker"
+                        android:layout_width="90dp"
+                        android:tint="@color/colorAccent"
+                        android:layout_height="90dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/test"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/backgroundColor500"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="end"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_new_tag2" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/symptoms_cv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:elevation="7dp"
+            app:cardElevation="7dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_symptoms3"
+                    android:layout_width="90dp"
+                    android:tint="@color/colorAccent"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/symptoms"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/backgroundColor500"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/infected_cv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:elevation="7dp"
+            app:cardElevation="7dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_virus"
+                    android:layout_width="90dp"
+                    android:tint="@color/colorAccent"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/infected"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/backgroundColor500"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/precautions_cv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:elevation="7dp"
+            app:cardElevation="7dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_precations3"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/precautions"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/backgroundColor500"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/history_cv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:elevation="7dp"
+            app:cardElevation="7dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_history"
+                    android:tint="@color/colorAccent"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/history"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/backgroundColor500"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

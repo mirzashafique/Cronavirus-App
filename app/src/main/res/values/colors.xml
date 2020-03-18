@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#f44336</color>
+
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="backgroundColor400">#BDBDBD</color>
+    <color name="backgroundColor500">#9E9E9E</color>
+    <color name="backgroundColor600">#757575</color>
+    <color name="backgroundColor700">#616161</color>
+
+
+    <!-- Intro background color-->
+    <color name="bg_intro1">#039BE5</color>
+    <color name="bg_intro2">#43A047</color>
+    <color name="bg_intro3">#3949AB</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_intro1">#1565C0</color>
+    <color name="dot_dark_intro2">#2E7D32</color>
+    <color name="dot_dark_intro3">#283593</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_intro1">#42A5F5</color>
+    <color name="dot_light_intro2">#66BB6A</color>
+    <color name="dot_light_intro3">#7986CB</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_intro1</item>
+        <item>@color/dot_light_intro2</item>
+        <item>@color/dot_light_intro3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_intro1</item>
+        <item>@color/dot_dark_intro2</item>
+        <item>@color/dot_dark_intro3</item>
+    </array>
+</resources>

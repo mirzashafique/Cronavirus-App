@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PlaceholderFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="match_parent"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/yes_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/yes_im"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:tint="@color/backgroundColor400"
+                    android:src="@drawable/ic_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/yes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/no_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/no_im"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:tint="@color/backgroundColor400"
+                    android:src="@drawable/ic_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="@string/no" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
