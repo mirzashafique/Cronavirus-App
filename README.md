@@ -6,7 +6,7 @@ i made and publish this application with in 24 hours and also i converted this a
 
 Functionality:
 
-1- Cronavirus statistics country by country.
+1- Cronavirus statistics country by country.\n
 2- Cronavirus Test predictions on the base of user given inputs
 
 3- Information related to Symptoms
